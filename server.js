@@ -14,6 +14,7 @@ mongoose.connection.once("open", () => {
 });
 
 require("./models/User");
+require("./models/Chatroom");
 
 const app = require("./app");
   
