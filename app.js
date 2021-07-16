@@ -7,6 +7,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(require("cors")());
 
 app.use("/user", require("./routes/user.js"));
+app.use("/chatroom", require("./routes/chatroom.js"));
 
 const errorHandlers = require("./handlers/errorHandlers");
 app.use(errorHandlers.notFound);
